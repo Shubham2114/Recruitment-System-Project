@@ -1,0 +1,205 @@
+<html>
+
+<!-- Mirrored from techvision-org-pbl-project.web.app/Register.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Sep 2021 04:51:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+     <title>Registration form to join Techvision</title>
+     <link rel="stylesheet" href="/regester.css">
+     <link rel="stylesheet" href="../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&amp;family=Cinzel:wght@500&amp;family=Roboto:wght@300&amp;family=Poppins:wght@500;600;800&amp;display=swap" rel="stylesheet">
+    
+     <script>
+        window.onload=function(){
+            document.getElementById('loader').style.display="none";
+            document.getElementById('all-page').style.display="block";
+        };
+    </script>
+    <style>
+        #all-page{display:none;}
+        
+    </style>
+</head>
+<body>
+    <section>
+    <div id="loader">
+        <div class="loder">
+        <img src="../i.pinimg.com/originals/2c/bb/5e/2cbb5e95b97aa2b496f6eaec84b9240d.gif">
+            </div>
+    </div>
+</section>
+    <section id="all-page">
+
+    <div class="wrapper">
+        <div class="title">
+            Registration  Form
+        </div>
+        
+         <script type="text/javascript">var submitted=false;</script>
+        
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='https://techvisionsoftwares.ga/Register.html';}"></iframe>    
+        
+        
+        
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfHRNvGZZW09oooLrPeUUY7C6PyMMOXu_KSOCtOW6O3p8Nb4A/formResponse"  method="post" target="hidden_iframe" onsubmit="return validateForm(); " >
+        <div class="form">
+            <div class="input_field">
+                <label1>First Name</label1>
+                <input type="text" required name="entry.675435901" class="input" >
+            </div>
+            <div class="input_field">
+                <label1>Last Name</label1>
+                <input type="text" class="input" required name="entry.1602925867">
+            </div>
+            
+            <div class="input_field">
+                <label1>Gender</label1>
+                <div class="custom-select" required>
+                    <select>
+                        <option value="" name="gender">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="input_field">
+                <label1>Email Address</label1>
+                <input type="email" id="email" class="input" required name="entry.1925591070">
+                
+            </div>
+            <div class="input_field">
+                <label1>Phone Number</label1>
+                <input type="number" id="phone" class="input" required name="entry.1029742702">
+                
+            </div>
+            <div class="input_field">
+                <label1>City</label1>
+                <input type="text" class="input" required name="entry.1471686811">
+                
+            </div>
+            <div class="input_field">
+                <label1>Address</label1>
+                <textarea class="textarea" required name="entry.1440642717"></textarea>
+            </div>
+            <div class="input_field">
+                <label1>PIN code</label1>
+                <input type="number" class="input" required name="entry.1684139286">
+                
+            </div>
+            <div class="input_field">
+                <label1 class="check">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label1>
+                        <p>I had read all the terms and conditions to apply</p>
+            </div>
+             <div class="input_field">
+                <input type="submit" value="Submit request" class="btn">
+            </div>
+        </div>
+         </form>   
+        </div>
+
+
+
+
+    
+    
+    </section> 
+    
+    
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+sideNav.style.right = "-250px";
+    
+    
+menuBtn.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+        menu.src = "images/close.png";
+    }
+    else{
+        sideNav.style.right = "-250px";
+        menu.src = "images/menu.png";
+
+    }
+}
+ var first-name = document.getElementById("menuBtn")
+            
+            
+</script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="__/firebase/8.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="__/firebase/8.6.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="__/firebase/init.js"></script> 
+   
+        <script type="text/javascript">
+    
+            
+          function validatePhone() {
+            var phone = document.getElementById('phone').value;
+            if(phone.length == 0) {
+              alert("Phone number can't be blank") ;//Validation Message
+              return false;
+            }
+
+            if(!phone.match(/^[0]?[789]\d{9}$/)) {
+             alert("Please enter a correct phone number") ;//Validation Message
+             return false;
+           }
+
+           return true;
+
+         }
+
+         function validateEmail () {
+
+          var email = document.getElementById('email').value;
+          if(email.length == 0) {
+            alert("Email can't be blank") ;//Validation Message
+            return false;
+
+          }
+
+          if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+            alert("Please enter a correct email address") ;//Validation Message
+            return false;
+
+          }
+
+          return true;
+
+        }
+
+
+        function validateForm() {
+          if ( !validatePhone() || !validateEmail()) {
+
+            alert("Form not submitted");//Validation Message
+            return false;
+          }
+          else {
+            submitted=true;
+            return true;
+          }
+        }
+        </script>
+
+    
+
+</body>
+
+<!-- Mirrored from techvision-org-pbl-project.web.app/Register.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Sep 2021 04:51:53 GMT -->
+</html>
